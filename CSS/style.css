@@ -274,3 +274,46 @@ h3{
     border: none;
     cursor: pointer;
 }
+
+  
+  .menu-container {
+    position: relative;
+  }
+  
+  .menu-btn {
+    background-color: var(--primario); /* Cambiado a color primario */
+    color: var(--blanco); /* Cambiado a color blanco */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: var(--fuentePrincipal); /* Cambiado a la fuente principal */
+  }
+  
+  .menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* ocultar la lista por defecto */
+    position: absolute;
+    background-color: var(--primarioOscuro); /* Cambiado a color primario oscuro */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .menu-list li {
+    padding: 10px;
+  }
+  
+  .menu-list li a {
+    text-decoration: none;
+    color: var(--blanco); /* Cambiado a color blanco */
+  }
+  
+  .menu-list li a:hover {
+    background-color: var(--secundario); /* Cambiado a color secundario */
+  }
+  
+  .menu-container:hover .menu-list {
+    display: block; /* mostrar la lista cuando se pasa el ratón sobre el contenedor */
+  }
+  
